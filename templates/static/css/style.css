@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    letter-spacing: 0.0625em;
+}
+
+/* navigation bar styling  */
+#mainNav {
+    min-height: 3.5rem;
+    background-color: rgb(5, 4, 4);
+}
+#mainNav .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: #64a19d;
+    border: 1px solid #64a19d;
+}
+#mainNav .navbar-toggler:focus {
+    outline: none;
+}
+#mainNav .navbar-brand {
+    color:  #64a19d;
+    font-weight: 700;
+    padding: 0.9rem 0;
+}
+#mainNav .navbar-nav .nav-item:hover {
+    color: fade(#fff, 80%);
+    outline: none;
+    background-color: transparent;
+}
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+/* styling for expanded navbar */
+@media (min-width: 992px) {
+    #mainNav {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        background-color: black;
+        transition: background-color 0.3s ease-in-out;
+    }
+/* adjust text coloring  */
+    #mainNav .navbar-brand {
+        padding: 0.5rem 0;
+        color: #64a19d;
+    }
+    #mainNav .nav-link {
+        transition: none;
+        padding: 2rem 1.5rem;
+        color: #64a19d;
+    }
+    #mainNav .nav-link:hover {
+        color: #58e6de;
+    }
+    #mainNav .nav-link:active {
+        color: #fff;
+    }
+    #mainNav.navbar-shrink {
+        background-color: rgb(0, 3, 1);
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        color: #64a19d;
+    }
+    #mainNav.navbar-shrink .nav-link {
+        color: #64a19d;
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-bottom: 0.25rem solid transparent;
+    }
+    #mainNav.navbar-shrink .nav-link:hover {
+        color: #64a19d;
+    }
+    #mainNav.navbar-shrink .nav-link:active {
+        color: #467370;
+    }
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #64a19d;
+        outline: none;
+        border-bottom: 0.25rem solid #64a19d;
+    }
+}
+
+
+/* Header styling */
+
+.btn {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem;
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+    background-color: transparent;
+    color: #64a19d;
+}
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../img/bg-masthead.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.masthead h1 {
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+}
+.masthead h2 {
+    max-width: 20rem;
+    font-size: 1rem;
+}
+@media (min-width: 768px) {
+    .masthead h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+@media (min-width: 992px) {
+    .masthead {
+        height: 100vh;
+        padding: 0;
+    }
+    .masthead h1 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.8rem;
+    }
+    .masthead h2 {
+        max-width: 30rem;
+        font-size: 1.25rem;
+    }
+}
+@media (min-width: 300px) {
+    .img-profile {
+        max-width: 15rem;
+        max-height: 15rem;
+    }
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.img-fluid-profile {
+    max-width: 75%;
+    height: auto;
+    opacity: .15;
+}
+.ml-auto, .mx-auto {
+    margin-left: auto !important;
+}
+.mr-auto, .mx-auto {
+    margin-right: auto !important;
+}
+.mb-5, .my-5 {
+    margin-bottom: 3rem !important;
+}
+.mx-auto img {
+    vertical-align: middle;
+}
+
+/* login styling  */
+
+.login-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../img/login2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .login-section h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+@media (min-width: 992px) {
+    .login-section {
+        height: 100vh;
+        padding: 0;
+    }
+}
+
+.login-section form {
+    color: #64a19d;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-left: 40rem;
+}
+
+.login-section form input {
+    width: 15rem;
+    background-color: transparent;
+    color: #58e6de;
+}
+
+.login-section form a {
+    color: #58e6de;
+    font-size: 1rem;
+}
+
+/* registration styling */
+
+.registration-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../img/Register.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .registration-section h1 {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
+@media (min-width: 992px) {
+    .registration-section {
+        height: 100vh;
+        padding: 0;
+    }
+}
